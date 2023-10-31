@@ -1,0 +1,67 @@
+[debug] [2023-10-31T15:12:59.156Z] ----------------------------------------------------------------------
+[debug] [2023-10-31T15:12:59.158Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\abdul\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-10-31T15:12:59.158Z] CLI Version:   12.7.0
+[debug] [2023-10-31T15:12:59.158Z] Platform:      win32
+[debug] [2023-10-31T15:12:59.158Z] Node Version:  v18.17.0
+[debug] [2023-10-31T15:12:59.160Z] Time:          Tue Oct 31 2023 20:42:59 GMT+0530 (India Standard Time)
+[debug] [2023-10-31T15:12:59.160Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-31T15:12:59.167Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-31T15:12:59.167Z] > authorizing via signed-in user (abdulaskar45@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\abdul\Desktop\ReactJS\todoapp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-10-31T15:13:10.149Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-10-31T15:13:11.037Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-10-31T15:13:11.037Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project todoapp-cdc9c (todoapp) 
+[info] 
+=== Functions Setup
+[debug] [2023-10-31T15:13:11.918Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-31T15:13:11.918Z] > authorizing via signed-in user (abdulaskar45@gmail.com)
+[debug] [2023-10-31T15:13:11.919Z] [iam] checking project todoapp-cdc9c for permissions ["firebase.projects.get"]
+[debug] [2023-10-31T15:13:11.919Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-cdc9c:testIamPermissions [none]
+[debug] [2023-10-31T15:13:11.919Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-cdc9c:testIamPermissions x-goog-quota-user=projects/todoapp-cdc9c
+[debug] [2023-10-31T15:13:11.919Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-cdc9c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-10-31T15:13:13.424Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-cdc9c:testIamPermissions 200
+[debug] [2023-10-31T15:13:13.424Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-cdc9c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-10-31T15:13:13.425Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-10-31T15:13:13.425Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/todoapp-cdc9c
+[debug] [2023-10-31T15:13:13.426Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-10-31T15:13:13.426Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/todoapp-cdc9c
+[debug] [2023-10-31T15:13:16.870Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/runtimeconfig.googleapis.com 200
+[debug] [2023-10-31T15:13:16.870Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-10-31T15:13:16.871Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/cloudfunctions.googleapis.com 200
+[debug] [2023-10-31T15:13:16.871Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-10-31T15:13:16.872Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-10-31T15:13:16.872Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/todoapp-cdc9c
+[debug] [2023-10-31T15:13:19.364Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-10-31T15:13:19.365Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-10-31T15:13:29.367Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-10-31T15:13:29.367Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/todoapp-cdc9c
+[debug] [2023-10-31T15:13:31.457Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/cloudfunctions.googleapis.com 200
+[debug] [2023-10-31T15:13:31.457Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/todoapp-cdc9c/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
